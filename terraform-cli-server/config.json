@@ -1,0 +1,32 @@
+{
+    "host": "0.0.0.0",
+    "port": 8080,
+    "routes": {
+        "/echo": {
+            "method": "GET",
+            "params": [
+                "message"
+            ],
+            "return_stdout": true,
+            "commands": [
+                {
+                    "command": "echo {message}"
+                }
+            ]
+        },
+        "/date": {
+            "method": "GET",
+            "commands": [
+                {
+                    "command": "date"
+                }
+            ]
+        }
+    },
+    "default_responses": {
+        "404": {
+            "type": "string",
+            "text": "This path was not found :)"
+        }
+    }
+}
