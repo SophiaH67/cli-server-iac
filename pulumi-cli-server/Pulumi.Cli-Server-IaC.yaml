@@ -1,7 +1,7 @@
 config:
   gcp:project: cli-server
   gcp:region: europe-west4
-  pulumi-cli-server:appPath: app
+  pulumi-cli-server:appPath: ../CliServer
   pulumi-cli-server:concurrency: "50"
   pulumi-cli-server:containerPort: "8080"
   pulumi-cli-server:cpu: "1"
